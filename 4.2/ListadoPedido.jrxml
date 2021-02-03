@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ListadoPedido" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f7ae2a76-1eb3-4c33-9206-ad971ebb7c74">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="Ik9SREVSUyIgQVMgLDYyLDQzLGFmMjdhODJmLTY3NmMtNGRiZS1hNjgwLWJkYzhhMDA5ODQyYTs="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sample DB"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT "ORDERS"."ORDERID",
+	"ORDERS"."CUSTOMERID",
+	"ORDERS"."EMPLOYEEID",
+	"ORDERS"."ORDERDATE",
+	"ORDERS"."REQUIREDDATE",
+	"ORDERS"."SHIPPEDDATE",
+	"ORDERS"."SHIPVIA",
+	"ORDERS"."FREIGHT",
+	"ORDERS"."SHIPNAME",
+	"ORDERS"."SHIPADDRESS",
+	"ORDERS"."SHIPCITY",
+	"ORDERS"."SHIPREGION",
+	"ORDERS"."SHIPPOSTALCODE",
+	"ORDERS"."SHIPCOUNTRY"
+FROM "ORDERS"]]>
+	</queryString>
+	<field name="ORDERID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="ORDERID"/>
+		<property name="com.jaspersoft.studio.field.label" value="ORDERID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<field name="CUSTOMERID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CUSTOMERID"/>
+		<property name="com.jaspersoft.studio.field.label" value="CUSTOMERID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<field name="EMPLOYEEID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="EMPLOYEEID"/>
+		<property name="com.jaspersoft.studio.field.label" value="EMPLOYEEID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<field name="ORDERDATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="ORDERDATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="ORDERDATE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<field name="REQUIREDDATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="REQUIREDDATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="REQUIREDDATE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<field name="SHIPPEDDATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="SHIPPEDDATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="SHIPPEDDATE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<field name="SHIPVIA" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="SHIPVIA"/>
+		<property name="com.jaspersoft.studio.field.label" value="SHIPVIA"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<field name="FREIGHT" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="FREIGHT"/>
+		<property name="com.jaspersoft.studio.field.label" value="FREIGHT"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<field name="SHIPNAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SHIPNAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="SHIPNAME"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<field name="SHIPADDRESS" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SHIPADDRESS"/>
+		<property name="com.jaspersoft.studio.field.label" value="SHIPADDRESS"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<field name="SHIPCITY" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SHIPCITY"/>
+		<property name="com.jaspersoft.studio.field.label" value="SHIPCITY"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<field name="SHIPREGION" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SHIPREGION"/>
+		<property name="com.jaspersoft.studio.field.label" value="SHIPREGION"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<field name="SHIPPOSTALCODE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SHIPPOSTALCODE"/>
+		<property name="com.jaspersoft.studio.field.label" value="SHIPPOSTALCODE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<field name="SHIPCOUNTRY" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SHIPCOUNTRY"/>
+		<property name="com.jaspersoft.studio.field.label" value="SHIPCOUNTRY"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement x="230" y="10" width="100" height="30" uuid="692ae560-2300-42a6-87f1-736b21614690"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[PEDIDOS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="10" width="100" height="30" uuid="50de01bb-56cf-46ac-a3e4-cdddec001d8f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ba18ba59-9f1c-4f01-adb1-32886c1a92be"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="22" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Nº de]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="10" width="100" height="30" uuid="efb376a0-b139-4810-bfc2-7c9d431ee3aa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8a0bdd69-a886-4d7a-b6aa-244d9daa1c26"/>
+				</reportElement>
+				<textElement>
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[NOMBRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="10" width="130" height="30" uuid="016aaa24-7feb-4fee-8730-648b598d7f41">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bbf2fcc4-885b-43a7-9efb-7692407fdffa"/>
+				</reportElement>
+				<textElement>
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[DIRECCION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="10" width="100" height="30" uuid="495e55c2-a211-4645-8214-32bcf8e5dc62">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1ecd6045-c53c-4a23-8d26-5c10cf3ffdfe"/>
+				</reportElement>
+				<textElement>
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[CIUDAD]]></text>
+			</staticText>
+			<line>
+				<reportElement x="20" y="49" width="510" height="1" uuid="942019d8-095c-49cf-bfcf-b889922217f8"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="20" y="0" width="100" height="30" uuid="cce9799f-d5f7-4dde-9338-536c776006b7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ba18ba59-9f1c-4f01-adb1-32886c1a92be"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ORDERID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="100" height="30" uuid="995c4595-7680-4c79-888a-89a6fd2474ee">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8a0bdd69-a886-4d7a-b6aa-244d9daa1c26"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{SHIPNAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="100" height="30" uuid="511d2516-02c5-46cb-b05f-98885eea175e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bbf2fcc4-885b-43a7-9efb-7692407fdffa"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{SHIPADDRESS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="0" width="100" height="30" uuid="d3c76487-02be-467f-b27e-9102f7ec4a85">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1ecd6045-c53c-4a23-8d26-5c10cf3ffdfe"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{SHIPCITY}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="23" splitType="Stretch">
+			<line>
+				<reportElement x="20" y="10" width="510" height="1" uuid="dc98054d-b34c-4fcb-bb0b-15f39b3c3f87"/>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>

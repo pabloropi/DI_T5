@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="apabout" prefHeight="168.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appinformes.AboutController">
+   <children>
+      <TextArea editable="false" focusTraversable="false" layoutX="18.0" layoutY="85.0" pickOnBounds="false" prefHeight="62.0" prefWidth="264.0" style="-fx-focus-color: transparent; -fx-faint-focus-color: transparent;" text="Pablo Rodríguez Pino&#10;IES Los Montecillos&#10;2º Desarrollo de Aplicaciones Multiplataforma" />
+      <ImageView fx:id="imAbout" fitHeight="67.0" fitWidth="62.0" layoutX="18.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="92.0" layoutY="28.0" prefHeight="27.0" prefWidth="170.0" text="AppInformes">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

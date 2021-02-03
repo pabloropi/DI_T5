@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Contactos" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="701eee58-49a4-48c7-a7b0-b19127c63929">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="HSQLDB"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM CONTACTOS]]>
+	</queryString>
+	<field name="ID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="ID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="CONTACTOS"/>
+	</field>
+	<field name="NOMBRE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NOMBRE"/>
+		<property name="com.jaspersoft.studio.field.label" value="NOMBRE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="CONTACTOS"/>
+	</field>
+	<field name="CIUDAD" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CIUDAD"/>
+		<property name="com.jaspersoft.studio.field.label" value="CIUDAD"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="CONTACTOS"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="197" y="10" width="160" height="60" forecolor="#488BD4" uuid="cbe4e948-1241-4dac-8c6d-9f0f01fda8db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="25" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AGENDA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="336" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="29" width="549" height="32" backcolor="#6D74CF" uuid="32c226b5-7312-4b06-999b-f61e10b5cc63"/>
+				<textField>
+					<reportElement x="0" y="5" width="100" height="20" uuid="32d58a22-d0d9-4056-b3c1-e83bb7c647dd">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="28da69d5-6a94-4669-b25b-6fe8f256852e"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[$F{NOMBRE}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="260" y="6" width="100" height="20" uuid="02b06a79-5167-45a4-9dcd-f8f67d9a2ade">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c240a49b-6691-4f36-bb9b-57244fabb401"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[$F{CIUDAD}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<staticText>
+				<reportElement x="0" y="1" width="50" height="20" forecolor="#488BD4" uuid="1d27382c-0291-4ff5-babd-25394443f6c4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="28da69d5-6a94-4669-b25b-6fe8f256852e"/>
+				</reportElement>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[NOMBRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="1" width="40" height="20" forecolor="#488BD4" uuid="36685da7-3ec7-4dd4-a572-0328d702aaee">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c240a49b-6691-4f36-bb9b-57244fabb401"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[CIUDAD]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="6" y="280" width="549" height="1" uuid="772cd867-dede-47d8-84fb-6d5308313445"/>
+			</line>
+			<subreport>
+				<reportElement x="0" y="70" width="270" height="200" uuid="ac611f78-1ec5-48dd-840b-5c66c82bcda5">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<subreportParameter name="ID_CONTACTO">
+					<subreportParameterExpression><![CDATA[$F{ID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["subinforme1.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="280" y="70" width="270" height="200" uuid="c657e46d-fcde-4d2d-8e93-16e5aa630afd">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<subreportParameter name="ID_CONTACTO">
+					<subreportParameterExpression><![CDATA[$F{ID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["subinforme2.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>
