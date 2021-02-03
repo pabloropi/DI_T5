@@ -97,6 +97,7 @@ public class AppInformesController implements Initializable {
         Parent root1 = (Parent) fxmlLoader.load();
         Stage stage = new Stage();
         stage.getIcons().add(new Image("media/icon.png"));
+        stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle("FacturasCliente");
         stage.setScene(new Scene(root1));
         stage.show();
@@ -125,6 +126,7 @@ public class AppInformesController implements Initializable {
         Parent root1 = (Parent) fxmlLoader.load();
         Stage stage = new Stage();
         stage.getIcons().add(new Image("media/icon.png"));
+        stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle("About");
         stage.setScene(new Scene(root1));
         stage.show();
